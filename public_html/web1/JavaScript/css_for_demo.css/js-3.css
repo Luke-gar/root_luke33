@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: crimson;
+    text-align: center;
+    align-content: center;
+    font-weight:bolder;
+    margin-bottom: 40px;
+    transition:all 0.8s ease-in;
+}
+.circle.square{
+    border-radius: unset;
+}
+.circle.move-me{
+    transform: translateX(500px) translateY(600px) rotate(20deg);
+}
+.circle.square.make-round{
+    border-radius: 50%;
+}
+.circle.square.make-round.enlarge{
+    transform: scale(500px);
+}

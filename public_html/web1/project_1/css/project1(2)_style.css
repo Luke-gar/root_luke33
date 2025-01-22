@@ -1,0 +1,298 @@
+/* Basic reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+/* Baisc settings for text for overall page */
+body {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 44px;
+    color: rgb(240 240 240 / 1);
+}
+/* Grid, for the navagation bar */
+#container1 {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content min-content min-content;
+    gap:1.44rem;
+    padding: 0 0 1rem 0;
+    position: relative 
+
+}
+
+/* basic settings for the header */
+header {
+    width: 100%; 
+    height: 20;
+    background-color:#2D2D2D;   
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* setting for the image in the header */
+img#Sal_corp{
+    width: 300px;
+    border-radius: 50px;
+    border:2px solid black;
+}
+/* luke website in the header */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Kavoon", serif;
+    overflow-y: hidden;
+}
+/* navagation buttons */
+nav a {
+    display: inline-block;
+    color:white;
+    font-size: 1.44rem;
+    border-radius: 30px;
+    background-color: darkred;
+    padding: .5rem;   
+}
+/* End of navagation bar */
+
+/* banner, section */
+#bruce_banner {
+    background-image: url(../Img/tumblr_6bd8eff3c04ef57082938ab471abce60_ed6c9c17_1280\ 1\ \(1\).png);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    padding:90px;
+}
+/* end of banner section */
+
+/* Start of about me section */
+article#about{
+    display: grid;
+    grid-template-columns:1fr 5fr 1fr ;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 30px;
+    background-color: #006DD2;
+    padding: 20px;
+}
+p.about{
+    border-color: #2D2D2D;
+    border-radius: 50px;
+    
+    background-color: rgb(16 16 16 / 1);
+    padding: 1.44rem;
+}
+p.interest3{
+    /* background-image: url(https://64.media.tumblr.com/ffa3f3e67711b282b03d3180167f17fa/tumblr_p3g5oeztys1wxklzdo1_500.gif); */
+    border-radius: 50px 50px 0px 0px ;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-color: #2D2D2D;
+    background-color: #000000;
+    /* background-size:50%; */
+    /* background-position: center 90%; */
+    /* padding-bottom: 6rem; */
+    /* background-repeat: no-repeat; */
+    /* padding-bottom: 15rem; */
+}
+img.interest_imgs{
+    border-radius: 0px 0px 50px 50px ;
+    width: 100%;
+    
+}
+p.interest2{
+    /* background-image: url(https://i.pinimg.com/originals/b2/de/e0/b2dee014b60389081adf1746bf46e69a.gif); */
+    border-radius: 50px 50px 0px 0px;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-color: #2D2D2D;
+    background-color: #000000;
+    /* background-size:50%; */
+    /* background-position: center 90%; */
+    /* padding-bottom: 6rem; */
+    /* background-repeat: no-repeat; */
+    /* padding-bottom: 15rem; */
+}
+img#thridimage{
+    align-items: center;
+    border-radius: 0%;
+   
+
+}
+.interest1{
+    border-radius: 50px;
+    padding: 1.44rem;
+    border-color: #2D2D2D;
+    background-color: #000000;
+    padding-bottom: 120px;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../Img/backgournd_main.png);
+    background-size: cover;
+    background-position: center 0.3%;
+    background-repeat: no-repeat;
+    padding:2rem;
+
+    
+}
+
+@media screen and (max-width: 1052px) {
+    /* main { */
+        /* background-size: 100% auto; */
+    /* } */
+    .intro{
+        font-size: 0%;
+    }
+
+}
+@media screen and (max-width:801px) {
+    #Sal_corp{
+        width:fit-content;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container1{
+        grid-template-columns: 1fr;
+    }
+    a{
+        text-align: center;
+    }
+    .intro{
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    img#Sal_corp {
+        width: 200px;
+        padding-top: 10px;
+        border: 0px solid black;
+    }
+    .footer_griditem2{
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 2220px) {
+        footer#contact {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}
+
+.grid_container1{
+    padding-bottom: 25rem;
+    position: relative;
+
+}
+
+#grid_container img{
+    width: 100%;
+    height: auto;
+}
+
+#sticker{
+    position: relative;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    scale: 150%;
+    rotate: 20deg;
+    clip: unset;
+    overflow: unset;
+    overflow-clip-margin: unset;
+}
+
+
+@media screen and (min-width: 1400px) {
+    #sticker {
+        position: relative;
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+        scale: 150%;
+        rotate: 20deg;
+        clip: unset;
+        overflow: unset;
+        overflow-clip-margin: unset;
+}
+}
+
+/* Start of footer */
+footer{
+    padding: 20px;
+    background-color: #2D2D2D;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width: auto;
+}
+
+#funnysticker{
+  text-align: right;
+}
+
+p.footer_alignment{
+    text-align: center;
+}
+p.footer_griditem2{
+    text-align: center;
+}
+p.footer_griditem1{
+    text-align: left;
+}
+p.footer_griditem3{
+    text-align: right;
+}
+
+
+/* button css code */
+.Supercool-superfly-button{
+    background-color:crimson; 
+    padding: 5px 4px;
+    border-radius: 10px;
+    border: 1px soild orangered; 
+    box-shadow: 2px 4px 10px #000;
+    font-weight: bold;
+    color:rgb(0, 69, 97)
+}
+.Supercool-superfly-button:hover{
+    background-color: aqua;
+    color: rgb(255, 30, 0); 
+}
+
+input[type=text], 
+input[type=pasword],
+input[type=submit],
+textarea{
+    display:block;
+    margin-bottom:20px;
+    width:260px; 
+    padding:2px;
+    border-radius: 10px; 
+    border:1px;
+    color: black; 
+
+}
+
+header, #bruce_banner, main, footer,.grid_container, .interest3, #about{
+    max-width: 100%;
+}

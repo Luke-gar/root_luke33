@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_2</title>
+    <link rel="stylesheet" href="./css/project_2.css">
+</head>
+<body>
+    <section id="grid">
+    <h1 id="panel">Welcome to the display
+        <p>introducing Jörm's evlution line</p>
+    </h1>
+   <article id="images">
+    <span id="svg"> <img class="drago"  src="./imgs/Untitled-1.svg"></span>
+    <img id="refrrence" src="./imgs/Screenshot 2024-11-21 at 1.38.47 PM.png">
+    <img id="refrrence"src=  "./imgs/s-l400.jpg">
+   </article>
+</section>
+<section class="info">
+    <h2>creation method</h2>
+    <p>i created this caracter from sketch and scaned it through adobe scan in order to be able to transfer it over to the software adobe illistrator to create an svg usable for a small video game that you are able to play below</p>
+
+    <button id="btn" onclick="top.location.href = '../project_3/index.html'"> play the game</button>
+</section>
+<script>
+    const panel = document.getElementById("panel");
+    
+    const sound = new Audio("imgs/luffy.mp3")
+    panel.onclick = function() {
+                this.classList.toggle("slide-up");
+                sound.play();
+            
+       
+   
+    }
+</script>
+</body>
+</html>

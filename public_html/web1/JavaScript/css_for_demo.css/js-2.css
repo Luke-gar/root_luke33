@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+body{
+    background: darkgoldenrod
+}
+
+h1{
+    font-family: Arial;
+    color: blue;
+}
+#egg {
+    display: block;
+    width: 126px;
+    height: 180px;
+    background-color: red;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: all 1s ease-in;
+  }
+
+  #egg.change-me{
+  background-color: blue;
+  position: relative;
+  transform: translateX(2000px) rotateX(180deg) rotateY(180deg);
+
+  }

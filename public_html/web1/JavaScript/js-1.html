@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<h1>JavaScript demo</h1>
+<button id="loader" onclick="loadstuff()"> Click me!</button>
+<mainf id="content">
+<!-- <audio src="../JavaScript/sounds/One Piece OST  The Very, Very, Strongest.mp3" controls></audio> -->
+<button id="luffy" onclick="luffy()"> the very very Strongest</button>
+
+
+</mainf>
+
+<script>
+    alert ("hello nerd its your nightmare");
+    console.log("Page loaded Successfully!");
+    // this is a comment
+    /**
+     * Variables  
+     * @Salamander Flamewing
+
+     */
+    // dynamic variable "let"
+    let myName = "Luke";
+    // a constant variable "const"
+    const pi = 3.14159
+
+
+    console.log("PI x 99 ="+ pi*99)
+    // Concatenate Stings (text data) with other Strings or Dynamic data with + 
+    /**
+     *  F U N C T I O N S 
+     */
+
+     function eatPizza() {
+        alert("Yummers 🍱🍣🍜 🐙");
+
+     }
+     // new method of es6 functions 
+     let makePizza = ()=>{
+        console.log("adding Ingregdients... And bake")
+
+     }
+
+     const myContainer= document.getElementById("content");
+     let myAudio = new Audio("../JavaScript/sounds/Gojo 200 Hollow Purple  Animation with Original Voice Actor.mp3");
+     let soundFile= new Audio("../JavaScript/sounds/One Piece OST  The Very, Very, Strongest.mp3")
+
+     
+     
+
+     function loadstuff(){
+        myAudio.play()
+        myContainer.innerHTML = "<p>nine ropes, polarised light, crow and shomyo, the gap between within and without</p> <img src='https://i.makeagif.com/media/8-04-2022/mVSR0R.gif'>";
+        
+     }
+     function luffy(){
+      soundfile.play()
+      myContainer.innerHTML ="<img src='https://preview.redd.it/mg6brubvlg241.gif?width=400&auto=webp&s=d68a3585e9a247c4d52f3de4bdd866b51c52aea0>'"
+     }
+
+
+
+
+
+        
+</script>
+
+</html>

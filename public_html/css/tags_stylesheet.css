@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    Scroll-behavior: smooth;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 44px;
+    color: #8D0226;
+    background-color:#E2725B;
+    /* text-align:center; */
+}
+
+header {
+    width:100%; 
+    background-color:beige;
+    padding: 20px;
+    position: fixed;
+}
+
+header div {
+    width: 200px;
+
+}
+img{
+    width: 200px;
+
+}
+h2{
+    padding-top: 200px;
+}
+
+p {
+    
+    padding: 2px;
+
+    /* text-align:center; */
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+footer{
+    padding: 20px;
+    background-color:beige
+}
+main{
+    /* padding: 20px; */
+    /* padding-top:120px; */
+    /* for 4 potionions positions:top right bottom left*/
+    padding: 160px 20px 20px 20px;
+
+    /* combined left and right = 3  positiopms */
+    padding: 160px 20px 20px 
+}
+
+
+h1{
+    padding: 20px;
+    
+}
+
+.Supercool-superfly-button{
+    background-color:crimson; 
+    padding: 5px 4px;
+    border-radius: 10px;
+    border: 1px soild orangered; 
+    box-shadow: 2px 4px 10px #000;
+    font-weight: bold;
+    color:rgb(0, 69, 97)
+}
+.Supercool-superfly-button:hover{
+    background-color: aqua;
+    color: rgb(255, 30, 0); 
+}
+
+input[type=text], 
+input[type=pasword],
+input[type=submit],
+textarea{
+    display:block;
+    margin-bottom:20px;
+    width:260px; 
+    padding:2px;
+    border-radius: 10px; 
+    border:1px;
+    color: black; 
+
+}

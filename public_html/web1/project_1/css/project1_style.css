@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    Scroll-behavior: smooth;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 44px;
+    color: rgb(240 240 240 / 1);
+    
+    /* text-align:center; */
+}
+
+#container1{
+    display:grid;
+    /* grid-template-columns: 350px 1200px 700px ; */
+    grid-template-columns: min-content 1fr min-content min-content min-content min-content;
+    gap:1.44rem;
+    padding: 0 0 1rem 0;
+}
+header {
+    width:100%; 
+    height: 20;
+    background-color:#2D2D2D;   
+    padding-top: 20px;
+    padding-left: 20px;
+    padding: right 20px;
+  
+    
+}
+
+
+img{
+    width: 300px;
+    border-radius: 50px;
+    border:2px solid black;
+}
+div#grid1{
+    padding:20px; 
+
+}
+
+
+h2{
+    padding-top: 200px;
+}
+
+article#about{
+    display: grid;
+    grid-template-columns:1fr 5fr 1fr ;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 30px;
+    background-color: #006DD2;
+    padding: 20px;
+}
+
+p.about1{
+   padding:20px; 
+    background-color: #2D2D2D;
+    border-radius: 50px;
+}
+
+    /* text-align:center; */
+
+
+nav a {
+    display: inline-block;
+    color:white;
+    font-size: 1.44rem;
+    border-radius: 30px;
+    background-color: red;
+    padding: .5rem;
+
+    
+}
+ul{
+    text-align: right;
+}
+
+footer{
+    padding: 20px;
+    background-color:beige
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../Img/dfsx37u-a969df00-fed8-4b78-b511-995b322bfdca.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+p.intreast1{
+    border-color: #2D2D2D;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(16 16 16 / 1);
+    padding: 1.44rem;
+
+}
+
+
+h1{
+    padding: 20px;
+    
+}
+p#intro.grid2{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Kavoon", serif;
+ 
+         
+}
+
+
+.Supercool-superfly-button{
+    background-color:crimson; 
+    padding: 5px 4px;
+    border-radius: 10px;
+    border: 1px soild orangered; 
+    box-shadow: 2px 4px 10px #000;
+    font-weight: bold;
+    color:rgb(0, 69, 97)
+}
+.Supercool-superfly-button:hover{
+    background-color: aqua;
+    color: rgb(255, 30, 0); 
+}
+
+input[type=text], 
+input[type=pasword],
+input[type=submit],
+textarea{
+    display:block;
+    margin-bottom:20px;
+    width:260px; 
+    padding:2px;
+    border-radius: 10px; 
+    border:1px;
+    color: black; 
+
+}
+#bruce_banner {
+    background-image: url(../Img/tumblr_6bd8eff3c04ef57082938ab471abce60_ed6c9c17_1280\ 1\ \(1\).png);
+    background-size: cover;
+    width:100%;
+    height:100%;
+    padding:90px;
+}

@@ -1,0 +1,13 @@
+Cmd+/= comment/uncomment 
+control+/= comment/uncoment
+control+S= save doc
+shfit+alt/option+ down= douplicate lines 
+
+
+
+
+
+BRowser 
+Control+shift+r= force reload. with assit files 
+
+*command = control on pc  

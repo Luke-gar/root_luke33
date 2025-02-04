@@ -1,3 +1,4 @@
+
 .container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -6,19 +7,48 @@
     position:relative;
     margin: 0 auto;
 }
-img{
-    position: relative;
-    left: 9rem;
-
+.container img{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 6rem
 }
 h1{
     background-color: #CCC533;
-    rotate: -20deg;
     color:white;
-    font-size: 1.9rem;
+    font-size: 1rem;
     text-align: center;
-    overflow
+    position: relative;
+    /* rotate: -10deg */
 }
-nav{
-    padding-top: 1rem;
+
+.papers{
+    background-color: #F6EEE3;
+    width: auto;
+    max-width: 400px;
+    padding: 25px;
+    margin: auto;
+}
+
+.papers img {
+    width: 100%;
+}
+
+.p1{
+    rotate: 15deg;
+}
+
+.p2 {
+    rotate: -15deg;
+}
+
+body{
+    background-color: #CDA678;
+}
+
+.grid   {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 100px;
+    margin-top: 4rem;
 }

@@ -1,0 +1,24 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 35px;
+    max-width: 5000rem;
+    position:relative;
+    margin: 0 auto;
+}
+img{
+    position: relative;
+    left: 9rem;
+
+}
+h1{
+    background-color: #CCC533;
+    rotate: -20deg;
+    color:white;
+    font-size: 1.9rem;
+    text-align: center;
+    overflow
+}
+nav{
+    padding-top: 1rem;
+}

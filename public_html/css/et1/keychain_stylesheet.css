@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html{
+    width:100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #9B8AB4;
+    padding:20px
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    align-items:center;
+}
+
+figure{
+    background-color: white;
+    box-shadow: 3px 12px 20px #27254C;
+    border: 20px solid rgb(255, 255, 255);
+    border-bottom: 60px solid rgb(255, 255, 255); 
+    
+}
+
+.id-items:hover{
+    transform: scale(1.1);
+}
+img{
+    width: 100%;
+}
+figcaption{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}

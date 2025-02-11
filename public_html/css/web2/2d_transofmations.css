@@ -39,10 +39,34 @@ a:hover {
     transition: color0.5s;
     color: aqua;
     padding: 2rem;
+    transition: 3s;
 }
 
 a {
     color: red;
     font-size: 3rem;
     padding: 2rem;
+    transition:  3s;
+}
+.scale{
+    transition: 2s;
+    
+}
+.rotate{
+    transition: 2s;
+}
+.translate{
+    transition: 2s;
+}
+section{
+    margin: auto;
+    width: fit-content;
+}
+p{
+    text-align: center;
+}
+footer{
+    margin:auto;
+    width: fit-content;
+    text-align: center;
 }

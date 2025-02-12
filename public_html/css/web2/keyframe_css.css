@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 3rem;
+ 
+}
+
+body {
+    background-color: #181818;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+img{
+    padding: 2rem;
+    grid-column: 2;;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr auto;
+   background-color: #a6a6a6;
+    height: 35rem;
+    width: 80rem;
+}
+/* end of basic set up */
+
+.parent:hover .child{
+    
+    animation: right-to-left 2s ease-in-out forwards;
+}
+.child{
+    transition: 2s ease-in-out;
+}
+
+@keyframes right-to-left {
+    100%{
+    transform: translateX(-250%) translateY(130%);
+    }
+
+    50%{
+        transform: translateX(-120%) translateY(75%);
+    }
+    
+    0%{
+        transform: translateX(10%) 
+    }
+}

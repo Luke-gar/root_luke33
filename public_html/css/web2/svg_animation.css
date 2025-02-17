@@ -1,0 +1,59 @@
+#card{
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 600px));
+    margin: auto;
+    width: auto;
+    padding-top: 2rem;
+}
+
+#cards section{
+    padding:2.4rem 1rem;
+}
+svg{
+    max-width: 400px;
+    max-height: 400px;
+}
+#inner, #outer{
+    fill:none;
+    stroke-width: 4;
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+}
+#inner{
+    animation: drawingline 1s linear forwards;
+}
+a:hover #outer{
+   animation: drawingline 1s linear forwards;
+}
+#card a, article {
+    position: relative;
+}
+
+#card article {
+    position: absolute;
+    top: 0;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    
+}
+
+img {
+    max-width: 8rem;
+}
+
+
+@keyframes drawingline {
+    0% {
+        stroke-dashoffset: 2500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+header{
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+}
+h2{
+    color: white;
+}

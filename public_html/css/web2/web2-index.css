@@ -1,31 +1,25 @@
 
 .container{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 35px;
-    max-width: 5000rem;
-    position:relative;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit,minmax(30px,1fr));
+    gap: 45px;
+    position: relative;
+    
+
 }
 .container img{
-    position: absolute;
-    top:0;
-    right:0;
+    position: relative;
     width: 6rem
 }
-h1{
-    background-color: #CCC533;
-    color:white;
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    /* rotate: -10deg */
+.coffee_cup{
+    text-align: right;
 }
+
 
 .papers{
     background-color: #F6EEE3;
     width: auto;
-    max-width: 240px;
+    max-width: 350px;
     padding: 25px;
     margin: auto;
 }
@@ -44,6 +38,7 @@ h1{
     rotate: -15deg;
     box-shadow: -10px 10px #605A5A;
     transition: 2s;
+    text-align: center;
 }
 
 body{
@@ -53,11 +48,89 @@ body{
 .grid   {
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 100px; 
-    margin-top: 4rem;
+    gap: 150px; 
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .p1:hover,.p2:hover{
     rotate: 0deg;
     box-shadow: -10px 10px #605A5A;
     transition: 2s;
+}
+.low_res{
+    max-width: 7rem;
+    max-height: 7rem;
+    object-fit: contain;
+}
+h3{
+    font-family: "Crimson Text", serif ;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    background-color: #6F4E37;
+    padding: 0.5rem;
+    text-align: center;
+}
+img.links{
+    border-radius: 50% ;
+    max-width: 90px;
+    align-items: left;
+}
+.link{
+    text-align: right;
+}
+h2{
+   
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover, .back:hover{
+    color: orangered;
+}
+footer{
+    color: #6F4E37;
+}
+.coffee_cup{
+    position: relative;
+}
+.title{
+  max-width: fit-content;
+    rotate: -20deg;
+}
+
+h1 {
+    font-size: 1.5rem;
+    background-color: #CCC533;
+    padding: 1rem;
+    color: white;
+    max-width: 300px;
+    box-shadow: -10px 10px #605A5A;
+    
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5rem;
+    min-width: 150px;
+}
+#nav2{
+    max-width: 100px;
+    max-height: 100px;
+}
+#nav{
+    max-width: 150px;
+    max-height: 150px;
+}
+#nav3{
+    display:block;
+    width: 100%;
+    height: 100%;
 }

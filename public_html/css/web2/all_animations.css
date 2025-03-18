@@ -1,0 +1,141 @@
+header{
+    text-align: center;
+    background-color: black;
+}
+p{
+    color: #a6a6a6;
+    padding: 3.5vw;
+    margin: 0 auto;
+    max-width: 20vw;
+    font-size: 3vw;
+}
+.setup {
+    text-align: center;
+    padding: 1.5vw;
+}
+.leaf{
+    border-radius: 50%;
+    max-width: 10vw;
+    
+}
+#fade{
+    opacity: 0.9%;
+}
+#fade:hover{
+    opacity: 100%;
+    transition: 4s;
+}
+#size:hover{
+    transform: scale(1.5);
+}
+#size{
+    transition: 4s;
+}
+#move{
+    transition: 5s;
+}
+#move:hover{
+    transform: translateX(20vw)
+}
+#spin{
+    transition:1s;
+}
+#spin:hover{
+    transform:rotate(180deg)
+}
+#boxes img{
+   width: 50%;
+   aspect-ratio: 3/2;
+   object-fit: cover;
+   object-position: center center;
+}
+#boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,400px));
+    gap:24.44rem;
+    padding:3rem 3rem;
+    justify-content: center;
+    transform: translateY(282px);
+}
+.box{
+    position: relative;
+    perspective: 300px;
+    user-select: none;
+}
+.box article{
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    transition: transform 0.5;
+    transform-origin: center;
+}
+.front, .back{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    backface-visibility: visible;
+    user-select: none;
+}
+.front{
+    position:absolute;
+    opacity: 100%;
+    transform: rotateX(0deg) translate3d(0px,10px,116px);
+}
+.back{
+    position: absolute;
+    transform: rotateX(-107deg) translate3d(0px, 100px, -87.7px);;
+}
+.back:hover .front{
+    transition: 3s;
+    opacity: 0%;
+}
+.box:hover article{
+    transform: rotateX(80deg);
+    transition: 2s;
+}
+#line{
+    stroke: aqua;
+    fill: none;
+    stroke-width: 1;
+    stroke-dasharray: 1900;
+    stroke-dashoffset:  1900;
+    
+}
+svg{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+#line:hover{
+    
+    animation: traceline 3s linear forwards
+}
+
+@keyframes traceline {
+    0%{
+        stroke-dashoffset: 1800;
+    }
+    100%{
+        stroke-dashoffset: 0;
+}
+
+} 
+
+#keyframe{
+    background-color: rgb(48, 109, 103);
+    
+} 
+
+
+#parent:hover, #child{
+    animation:size 8s; 
+    
+}
+@keyframes size{ 
+    0%{
+        transform: scale(10%);
+  
+    }
+    100%{
+        transform: scale(100%);
+  
+    }
+}

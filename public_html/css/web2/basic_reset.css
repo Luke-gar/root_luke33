@@ -11,13 +11,15 @@
     line-height: 1.44;
     height: 100%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+   
   }
   h1 {
     margin-top: 0;
     font-size: 4rem;
+    color: #a6a6a6;;
   }
-  body{
-    background-color: black;
-  }
+  
+  body {
+    background-color: #181818;
+    }
   

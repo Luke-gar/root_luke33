@@ -1,0 +1,129 @@
+header, body{
+    background-color: #2082B0;
+}
+h1{
+    font-size: 5vw;
+    color:black;
+    text-align: center;
+    
+}
+#container{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: left;
+    position:relative;
+}
+.intro{
+     position: absolute;
+     top: 0.5px;
+     font-size: 4vw;
+}
+.container2{
+display: grid;
+grid-template-columns: 1(auto-fit, minmax(300px, 1fr));
+position: relative;
+}
+
+.subtitle{
+    position: absolute;
+    top: 3vw;
+    left: 39vw;
+    text-align: center;
+}
+
+.subtitle2 {
+    position: absolute;
+    top:3vw;
+    left: 17vw;
+    text-align: center;
+}
+.subtitle3 {
+    position: absolute;
+    top:3vw;
+    left: 43vw;
+    text-align: center;
+} 
+#mood{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.container_text{
+    display:grid;
+    place-self: center;
+    padding: 0.5rem;
+    width: 82.5vw;
+    background-color: wheat;
+    border-left: 0.5vw solid yellow;
+    border-right: 0.5vw solid yellow;
+    text-align: center;
+
+}
+p{
+    font-size: 2vw;
+}
+.up{
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.container3{
+    position: relative;
+}
+.drawing{
+    position: absolute;
+    top: 27vw;
+    left: 37vw;
+    width: 30vw;
+    
+}
+.cls-1 {
+    fill:none; 
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 3s linear;
+}
+#layer_1:hover .cls-1{
+    stroke-dashoffset: 0;
+    
+}
+@keyframes traceline {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 1800;
+    }
+}
+.hidden{
+    text-align: center;
+    font-size: 5vw;
+    opacity: 0%;
+    transition: 1s ease;
+    /* animation: fadein 3s forwards; */
+  
+    
+}
+figcaption{
+    text-align: center;
+    font-size: 3vw;
+}
+.visable{
+    opacity: 100%;
+}
+/* figcaption:hover{
+    animation:fadein 3s both;
+}
+@keyframes fadein{
+    0%{
+        opacity:0%;
+    }
+
+    100%{
+        opacity:100%
+    }
+
+} */

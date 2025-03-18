@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Animations Luke</title>
+    <link rel="stylesheet" href="../css/web2/basic_reset.css" />
+    <link rel="stylesheet" href="../css/web2/all_animations.css" />
+  </head>
+  <header>
+    <h1>All Animations Together</h1>
+  </header>
+  <body>
+    <!--Transition-->
+    <section class="setup">
+      <p>Transition</p>
+      <img src="./imgs/5_leaf.jpg" id="fade" class="leaf" />
+    </section>
+    <!--Scale-->
+    <section class="setup">
+      <p>Scale</p>
+      <img src="./imgs/5_leaf.jpg" id="size" class="leaf" />
+    </section>
+    <!-- Translate -->
+    <section class="setup">
+      <p>Translate</p>
+      <img src="./imgs/5_leaf.jpg" id="move" class="leaf" />
+    </section>
+    <!--Rotate-->
+    <section class="setup">
+      <p>Rotate</p>
+      <img src="./imgs/5_leaf.jpg" id="spin" class="leaf" />
+    </section>
+    <!--3d transform-->
+    <section id="boxes" class="setup">
+      <p>3d Transform</p>
+      <a class="box">
+        <article>
+          <div class="front">
+            <img src="./imgs/funny_404.png" />
+          </div>
+          <div class="back">
+            <img src="./imgs/funny_face_asta.jpg" />
+          </div>
+        </article>
+      </a>
+    </section>
+    <!-- Svg animation -->
+    <section class="setup">
+      <p>Svg Animation</p>
+
+      <!-- <?xml version="1.0" encoding="UTF-8"?> -->
+
+      <svg
+        id="line"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 687.78 462.5"
+      >
+        <defs></defs>
+        <path
+          class="cls-1"
+          id="hovered"
+          d="M4.31.31c100.24-2.83,242.58,12.98,319.03,83.16,20.87,19.07,37.06,43.55,45.14,70.72.68,1.85,1.34,4.9,1.88,6.81,1.8,6.71,2.85,13.77,4.29,20.53,26.02,120.59,150.04,225.06,260.16,270.48,11.9,4.51,44.9,16.68,52.98,6.22-7.99,10.77-42.42-1.75-53.18-5.69-111.47-44.69-236.91-148.59-264.36-270.04-1.5-6.72-2.6-13.69-4.45-20.31-.56-1.85-1.21-4.79-1.89-6.59-8.1-26.24-23.97-49.71-44.37-67.98-27.3-24.69-61.31-40.8-96.02-52.25C153.19,13.09,78.29,6.66,4.82,9.29,2.32,9.47.13,7.55,0,5.04-.13,2.55,1.81.41,4.31.31h0Z"
+        />
+      </svg>
+    </section>
+    <section class="setup" id="keyframe">
+      <p>Key frame animation</p>
+      <article id="parent">
+        <img
+          src="./imgs/funny_face_asta.jpg"
+          alt="asta from black clover funyn face"
+          id="child"
+        />
+      </article>
+    </section>
+  </body>
+</html>

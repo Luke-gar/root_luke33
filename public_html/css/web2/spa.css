@@ -5,9 +5,10 @@ h1{
     font-size: 5vw;
     color:black;
     text-align: center;
+    font-family: 'Indie Flower';
     
 }
-#container{ 
+header{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: left;
@@ -18,17 +19,21 @@ h1{
      top: 0.5px;
      font-size: 4vw;
 }
-.container2{
+
+main article{
 display: grid;
 grid-template-columns: 1(auto-fit, minmax(300px, 1fr));
 position: relative;
 }
 
 .subtitle{
-    position: absolute;
-    top: 3vw;
-    left: 39vw;
+    /* position: absolute; */
+    /* top: 3vw; */
+    /* left: 39vw; */
     text-align: center;
+    position: relative;
+    transform: translateY(10px);
+    top: 10vw;
 }
 
 .subtitle2 {
@@ -45,11 +50,9 @@ position: relative;
 } 
 #mood{
     text-align: center;
-    width: 100%;
-    height: 100%;
-    
-   
+    width: 100%; 
 }
+
 .container_text{
     display:grid;
     place-self: center;
@@ -59,71 +62,164 @@ position: relative;
     border-left: 0.5vw solid yellow;
     border-right: 0.5vw solid yellow;
     text-align: center;
+    font-family: 'Indie Flower';
 
 }
 p{
-    font-size: 2vw;
+    font-size: 5vw;
+    display: block;
 }
 .up{
     display: block;
     padding-bottom: 0.5rem;
 }
-.container3{
+.container3, .container4{
     position: relative;
+    height: 1vw;
 }
-.drawing{
-    position: absolute;
+#shape{
+    position: relative;
     top: 27vw;
-    left: 37vw;
+    left: 36vw;
     width: 30vw;
-    
-}
-.cls-1 {
-    fill:none; 
+    height: 30vw;
+    fill: none;
     stroke-width: 2;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    transition: stroke-dashoffset 3s linear;
-}
-#layer_1:hover .cls-1{
-    stroke-dashoffset: 0;
     
 }
-@keyframes traceline {
+svg {
+    width: 35vw
+}
+
+
+#shape:hover {
+    animation: shape 3s linear forwards;
+
+}
+
+@keyframes shape {
     0% {
+        stroke-dasharray: 0;
         stroke-dashoffset: 0;
     }
 
     100% {
-        stroke-dashoffset: 1800;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 410;
     }
 }
+#perspective {
+    /* fill: none; */
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset:350;
+    stroke: red;
+    position: relative;
+    
+    /* position: absolute; */
+
+    /* transition: stroke-dashoffset 3s linear; */
+
+}
+
+#perspective:hover {
+    animation: perspective 3s linear forwards;
+
+}
+
+#lines{
+    position: relative;
+    top: -55vw;
+    left: 36vw;
+    width: 30vw;
+    height: 30vw;
+    fill: none;
+    stroke: white;
+    stroke-width: 0.0;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+    
+}
+#lines:hover{
+    animation: lines 3s linear forwards;
+}
+@keyframes lines{
+    0%{
+        stroke-dashoffset: 1300;
+        stroke-dasharray: 1300;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+    }
+}
+
+
+@keyframes perspective {
+    0% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 350;
+    }
+}
+
 .hidden{
     text-align: center;
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    /* display: none; */
     opacity: 0%;
-    transition: 1s ease;
+    font-size: 0.01vw;
+    /* transition: font-size 1s ease, opacity 3s; */
     /* animation: fadein 3s forwards; */
-  
     
+}
+.section2_hidden{
+    text-align: center;
+    opacity: 0%;
+    font-size: 0.51vw ;
+    font-family: 'Indie Flower';
 }
 figcaption{
     text-align: center;
     font-size: 3vw;
 }
-.visable{
-    opacity: 100%;
+.visible{
+    /* opacity: 100%;
+    display: block;
+    font-size: 5vw; */
+    animation: fadein 3s forwards;
 }
+
+.hidden img{
+    display: none;
+}
+.visible img{
+    display: block;
+}
+
 /* figcaption:hover{
     animation:fadein 3s both;
-}
+}*/
+
 @keyframes fadein{
     0%{
-        opacity:0%;
+        opacity: 0;
+        font-size: 0.01vw;
+    }
+    25%{
+        opacity:0;
+        font-size: 5vw;
     }
 
     100%{
+        font-size: 5vw;
         opacity:100%
     }
 
-} */
+} 

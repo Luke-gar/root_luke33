@@ -1,0 +1,65 @@
+svg{
+    width: 35vw
+}
+.drawing2 {
+    fill:none; 
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke: red;
+    /* transition: stroke-dashoffset 3s linear; */
+    
+}
+.drawing2:hover{
+   animation: traceline 3s linear forwards;
+    
+}
+@keyframes traceline {
+    0% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 350;
+    }
+}
+#shape {
+    position: absolute;
+    top: 27vw;
+    left: 37vw;
+    width: 30vw;
+    height: 30vw;
+
+}
+
+svg {
+    width: 35vw
+}
+
+#shape {
+    fill: none;
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    /* transition: stroke-dashoffset 3s linear; */
+
+}
+
+#shape:hover {
+    animation: traceline 3s linear forwards;
+
+}
+
+@keyframes traceline {
+    0% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 410;
+    }
+}

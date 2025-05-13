@@ -22,7 +22,7 @@ header{
 
 main article{
 display: grid;
-grid-template-columns: 1(auto-fit, minmax(300px, 1fr));
+grid-template-columns: 1fr;
 position: relative;
 }
 
@@ -55,6 +55,7 @@ position: relative;
 
 .container_text{
     display:grid;
+    grid-template-columns: 1fr;
     place-self: center;
     padding: 0.5rem;
     width: 82.5vw;
@@ -222,4 +223,6 @@ figcaption{
         opacity:100%
     }
 
-} 
+
+
+}

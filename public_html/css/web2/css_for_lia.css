@@ -8,7 +8,7 @@ body {
 
 h2 {
     text-align: left;
-    font-size: 7vw;
+    font-size: 5vw;
     align-self: center;
 
 }
@@ -79,7 +79,6 @@ input#bun {
 
 .patty {
     position: absolute;
-    top: 100;
     left: 0;
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
@@ -265,3 +264,19 @@ footer {
 h3 {
     font-size: 4vw;
 }
+ @media screen and (min-width: 700px) {
+     .patty {
+        position: absolute;
+            left: 0;
+            display: none;
+            grid-template-columns: 1fr 1fr 1fr;
+            background: #ffffff;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            top: 5.5rem;
+            animation: frying 2s ease-in-out;
+            gap: 15vw;
+     }
+
+ }

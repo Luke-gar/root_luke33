@@ -1,16 +1,19 @@
-html{
-    background-color:#F8F2BF ;
-}
-body{
+html {
     background-color: #F8F2BF;
 }
-h2{
+
+body {
+    background-color: #F8F2BF;
+}
+
+h2 {
     text-align: left;
-    font-size: 1.44rem;
+    font-size: 7vw;
     align-self: center;
 
 }
-nav{
+
+nav {
     background-color: #E8E5C3;
     grid-template-columns: 1fr auto;
     display: grid;
@@ -19,216 +22,246 @@ nav{
     padding-right: 1rem;
     color: #3C66DB;
 }
-.row{
+
+.row {
     justify-items: end;
 }
 
 
-p{
-    font-size: 1.2rem;
+p {
+    font-size: 2.5vw;
 }
-label.bun{
-    display:block;
+
+label.bun {
+    display: block;
     width: 44px;
     height: 52px;
-    position:relative;
-    cursor:pointer;
+    position: relative;
+    cursor: pointer;
 }
-input#bun{
+
+input#bun {
     display: none;
 }
-.line{
+
+.line {
     position: absolute;
     height: 6px;
     width: 100%;
     background: #6d6d6d;
-    transition:0.5s;
+    transition: 0.5s;
     left: 0;
 }
-.bun span:nth-child(1){
+
+.bun span:nth-child(1) {
     top: 12px;
 }
-.bun span:nth-child(2){
+
+.bun span:nth-child(2) {
     top: 24px;
 }
-.bun span:nth-child(3){
+
+.bun span:nth-child(3) {
     top: 36px;
 }
-#bun:checked + .bun .line:nth-child(1){
+
+#bun:checked+.bun .line:nth-child(1) {
     transform: translateY(12px) rotate(-45deg);
 }
-#bun:checked + .bun .line:nth-child(2){
-    opacity:0;
+
+#bun:checked+.bun .line:nth-child(2) {
+    opacity: 0;
 }
-#bun:checked + .bun .line:nth-child(3){
+
+#bun:checked+.bun .line:nth-child(3) {
     transform: translateY(-12px) rotate(45deg);
 }
-.patty{
+
+.patty {
     position: absolute;
     top: 100;
     left: 0;
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
-    background:#ffffff;
+    background: #ffffff;
     padding: 10px;
     position: absolute;
     right: 0;
     top: 2.1rem;
-    animation:frying 2s ease-in-out ; 
+    animation: frying 2s ease-in-out;
     gap: 2vw;
 }
-@keyframes frying{
-    100%{
+
+@keyframes frying {
+    100% {
         transform: translateX(0%);
     }
-    0%{
+
+    0% {
         transform: translateX(100%);
     }
 }
-#bun:checked~.patty{
-    display:grid;
+
+#bun:checked~.patty {
+    display: grid;
 }
 
-#img-transition{
-    display:grid;
+#img-transition {
+    display: grid;
     grid-template-columns: auto;
     justify-content: center;
 
 }
+
 /* placeholder for when i get to doing the java */
-img{
+img {
     width: 70vw;
-    
+
 }
-.active{
+
+.active {
     min-height: 20vw;
 }
-.deactive{
-    opacity:0%;
+
+.deactive {
+    opacity: 0%;
     display: none;
 }
 
-#Layer_1{
+#Layer_1 {
     width: 5vw;
     position: absolute;
     left: 35vw;
     top: 25vw;
 }
-.decal-top, .decal-bottom {
+
+.decal-top,
+.decal-bottom {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     padding: 2vw;
- }
- .decal{
+}
+
+.decal {
     width: 70vw;
-   
- }
- .decal:hover{
+
+}
+
+.decal:hover {
     animation: edge 4s ease-in-out;
- }
- 
- @keyframes edge{
-    0%{
+}
+
+@keyframes edge {
+    0% {
         stroke-dashoffset: 539;
         stroke-dasharray: 535;
     }
-    100%{
+
+    100% {
         stroke-dashoffset: 1000;
         stroke-dasharray: 10000;
     }
- } 
- .decal-bottom{
-     rotate: 180deg;
- }
- 
- .section-title{
-     text-align: center;
- }
+}
 
-.text-container{
-    display:grid;
+.decal-bottom {
+    rotate: 180deg;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.text-container {
+    display: grid;
     grid-template-columns: auto;
     text-align: center;
     padding: 5vw;
- }
- .body-text{
+}
+
+.body-text {
     padding: 0.5rem;
     transform: scale(0.9)
- }
- .body-text:hover{
+}
+
+.body-text:hover {
     animation: grow 1s forwards;
- }
- @keyframes grow{
-    0%{
+}
+
+@keyframes grow {
+    0% {
         transform: scale(0.9);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
- }
- .body-text::first-letter{
-    font-size: 1.728rem;
+}
+
+.body-text::first-letter {
+    font-size: 8vw;
     font-weight: bold;
     float: left;
     line-height: 5vw;
- }
- .side-decals{
+}
+
+.side-decals {
     position: relative;
- 
- }
- .right{
+
+}
+
+.right {
     position: absolute;
     left: -27vw;
     bottom: -51vw;
     transform: scale(0.2) rotate(274deg);
-    
- }
- .left{
+
+}
+
+.left {
     position: absolute;
     left: 56vw;
     bottom: -26vw;
     transform: scale(0.2) rotate(-274deg);
-   
- }
- .img-grid{
+
+}
+
+.img-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
- }
- .label{
+}
+
+.label {
     width: 35vw;
     padding: 0.5rem;
- }
+}
 
- 
- footer{
-    display:grid;
+
+footer {
+    display: grid;
     grid-template-columns: 1fr repeat(6, minmax(auto, auto));
-    background-color: #E8E5C3 ;
+    background-color: #E8E5C3;
 
- }
- .insta, .face{
+}
+
+.insta,
+.face {
     width: 8vw;
     justify-self: end;
     opacity: 20%;
- }
- .insta:hover, .face:hover{
+}
+
+.insta:hover,
+.face:hover {
     opacity: 100%;
     transition: 1s;
- }
- .face{
-    width:10vw
- }
- h3{
-    font-size: 1rem;
- }
-/*  @media screen and (min-width: 700px) {
-    h2 {
-            text-align: left;
-            font-size: 4vw;
-            align-self: center;
-    
-        }
-    
- } */
+}
+
+.face {
+    width: 10vw
+}
+
+h3 {
+    font-size: 4vw;
+}

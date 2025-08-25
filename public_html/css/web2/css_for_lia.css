@@ -1,6 +1,4 @@
-html {
-    background-color: #F8F2BF;
-}
+
 
 body {
     background-color: #F8F2BF;
@@ -8,7 +6,7 @@ body {
 
 h2 {
     text-align: left;
-    font-size: 5vw;
+    font-size: 1.5rem;
     align-self: center;
 
 }
@@ -29,7 +27,7 @@ nav {
 
 
 p {
-    font-size: 2.5vw;
+    font-size: 1.5rem;
 }
 
 label.bun {
@@ -82,13 +80,18 @@ input#bun {
     left: 0;
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
-    background: #ffffff;
+    background: #bbb99d;
     padding: 10px;
-    position: absolute;
     right: 0;
     top: 2.1rem;
     animation: frying 2s ease-in-out;
     gap: 2vw;
+    z-index: 1;
+}
+.patty, a{
+    color: #3C66DB;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 @keyframes frying {
@@ -105,46 +108,53 @@ input#bun {
     display: grid;
 }
 
-#img-transition {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-
-}
 
 /* placeholder for when i get to doing the java */
 img {
     width: 70vw;
 
 }
-
-.active {
-    min-height: 20vw;
+.wine-grid{
+    display: grid;
+    grid-template-columns:1fr auto;
+    justify-self: center;
+    gap: 1rem;
+    padding-top: 4vw;
 }
 
-.deactive {
-    opacity: 0%;
-    display: none;
+#pinot{
+    width: 14vw;
+    border-radius: 75%;
+}
+#algate{
+    width: 16vw;
+    border-radius: 50%;
+}
+.wines:hover, .label:hover{
+    transform: scale(1.5);
+    transition: 1s;
+    z-index: 1;
 }
 
-#Layer_1 {
-    width: 5vw;
-    position: absolute;
-    left: 35vw;
-    top: 25vw;
-}
 
-.decal-top,
-.decal-bottom {
+
+.decal {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     padding: 2vw;
 }
 
-.decal {
+.decal-top,
+.decal-bottom {
     width: 70vw;
 
+}
+.decal-top{
+    position: absolute;
+        left: 21vw;
+        top: 0vw;
+        width: 58vw
 }
 
 .decal:hover {
@@ -165,9 +175,22 @@ img {
 
 .decal-bottom {
     rotate: 180deg;
+    position: absolute;
+        left: 26vw;
+        top: 66vw;
+        width: 50vw;
+}
+@media screen and (min-width: 768px) {
+    .decal-bottom{
+        rotate: 180deg;
+        position: absolute;
+        left: 26vw;
+        top: 60vw;
+        width: 50vw;
+    }
 }
 
-.section-title {
+#section-pinot, #section-algate {
     text-align: center;
 }
 
@@ -176,6 +199,7 @@ img {
     grid-template-columns: auto;
     text-align: center;
     padding: 5vw;
+    padding-top: 17vw;
 }
 
 .body-text {
@@ -183,25 +207,12 @@ img {
     transform: scale(0.9)
 }
 
-.body-text:hover {
-    animation: grow 1s forwards;
-}
 
-@keyframes grow {
-    0% {
-        transform: scale(0.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.body-text::first-letter {
-    font-size: 8vw;
+.body-text:first-letter {
+    font-size: 4.5rem;
     font-weight: bold;
     float: left;
-    line-height: 5vw;
+    line-height: 3rem;
 }
 
 .side-decals {
@@ -264,19 +275,56 @@ footer {
 h3 {
     font-size: 4vw;
 }
- @media screen and (min-width: 700px) {
-     .patty {
+@media screen and (max-width: 537px ) {
+    .decal-top{
         position: absolute;
-            left: 0;
-            display: none;
-            grid-template-columns: 1fr 1fr 1fr;
-            background: #ffffff;
+            left: 27vw;
+            top: 10vw;
+            width: 47vw;
+    }
+}
+ @media screen and (min-width: 779px) {
+     .patty {
             padding: 10px;
-            position: absolute;
-            right: 0;
-            top: 5.5rem;
-            animation: frying 2s ease-in-out;
-            gap: 15vw;
+            display: grid;
+            background-color: #E8E5C3;
+            top: 1.2vw;
+            gap: 0vw;
+            grid-template-columns: -1.8rem 0.2rem;
+            justify-self: end;
+            animation: midea;    
+            z-index: 0;  
      }
-
- }
+     .patty, a{
+            font-size: 1.2rem;
+            text-decoration: none;
+     }
+     h2{
+       font-size: 2.5rem;
+     }
+         @keyframes midea {
+             100% {
+                 transform: translateX(0%);
+             }
+    
+             0% {
+                 transform: translateX(30%);
+             }   }
+     .line{
+        display: none;
+     }
+     .decal-top {
+         position: absolute;
+         left: 27vw;
+         top: 6vw;
+         width: 47vw
+         }
+    }
+     @media screen and (min-width: 890px) {
+        .decal-top {
+                position: absolute;
+                    left: 27vw;
+                    top: 2vw;
+                    width: 47vw;      
+            }
+}

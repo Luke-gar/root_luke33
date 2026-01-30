@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 body {
@@ -16,10 +17,25 @@ nav {
     grid-template-columns: 1fr auto;
     display: grid;
     align-items: top end;
+=======
+html{
+    background-color:#F8F2BF ;
+}
+h2{
+    text-align: left;
+}
+
+nav{
+    background-color: #E8E5C3;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    align-items: end;
+>>>>>>> 0764ca0 (large upload of radom changes)
     text-align: right;
     padding-right: 1rem;
     color: #3C66DB;
 }
+<<<<<<< HEAD
 
 .row {
     justify-items: end;
@@ -327,4 +343,8 @@ h3 {
                     top: 2vw;
                     width: 47vw;      
             }
+=======
+p{
+    font-size: 2.5vw;
+>>>>>>> 0764ca0 (large upload of radom changes)
 }
